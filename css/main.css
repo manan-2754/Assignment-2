@@ -1,0 +1,244 @@
+html {
+    font: normal normal normal 20px/1.5 Arial;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #efefff;
+    margin: auto;
+    text-align: center;
+    background-color: aqua;
+    border: 2px solid black;
+    padding: auto;
+    
+    background-image: linear-gradient(to left, darkblue, violet);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    flex: 2 1;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+main {
+    background-color: aqua;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+    box-sizing: border-box;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+aside {
+    padding: 10px;
+    background: url("../images/bgimg1.jpg") center bottom / cover
+}
+.vid{
+    width: 100%;
+    height: auto;
+}
+.iframe{
+    width: 1280px; 
+    height: 720px;
+}
+aside ul a {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    align-items: center;
+}
+
+nav li ul {
+    display: none;
+    position: absolute;
+
+}
+
+nav ul li {
+    display: inline;
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    padding: 5px;
+}
+
+nav ul ul li {
+    display: block;
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+nav ul li a {
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 4px;
+    background-color: aqua;
+    color: blue;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: blue;
+    color: aqua;
+}
+h2 {
+    color: darkblue;
+    margin: auto;
+    text-align: center;
+    background-color: lightblue;
+    border: 1px dashed black;
+    padding: 4px;
+}
+
+.side {
+    text-align: center;
+    background-color: rgb(149, 197, 239);
+    padding: 4px;
+    margin: auto;
+}
+
+img{
+    width: 50%;
+    height: auto;
+}
+
+.img1{
+    float: left;
+    clip-path: circle();
+
+    shape-outside: circle();
+    shape-margin: 15px;
+}
+
+
+.para {
+    padding: auto;
+}
+
+.quote {
+    /*text-align: center;*/
+    padding: auto;
+}
+
+a {
+    text-align: center;
+}
+
+a:hover {
+    color: green;
+}
+
+table,
+th,
+td {
+    padding: 6px;
+    margin: auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    color: darkblue;
+    background-color: aliceblue;
+    border: 1px dotted black;
+    margin-top: 30px;
+    padding: 4px;
+
+    background-image: linear-gradient(to left, blue, cyan, indigo);
+}
+
+.structural {
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid black;
+}
+
+form {
+    border: 5px dashed rgb(12, 12, 12);
+}
+
+input [type=text],
+[type=email],
+input[type=submit],
+select,
+option {
+    display: block;
+    width: 50%;
+    height: 2rem;
+}
+
+input [type=radio],
+[type=checkbos] {
+    height: 2em;
+    width: 2em;
+}
+
+select,
+option,
+label,
+legend {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+textarea {
+    width: 50%;
+    display: block;
+}
+
+fieldset {
+    border: none;
+}
+.body-grid-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#images{
+    width: 100%;
+    height: auto;
+    clip-path: ellipse();
+}
+@media (max-width: 1200px){
+    html{
+        font-size: 15px;
+    }
+}
+@media(max-width : 600px){
+    html{
+        font-size: 10px;
+    }
+    #images{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    aside{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    aside{
+        background: url("../images/aside2.jpg") center bottom / cover
+    }
+}

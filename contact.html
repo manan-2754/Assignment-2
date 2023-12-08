@@ -1,0 +1,86 @@
+<html>
+<head>
+  <title> Contact Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="contact" content="This page allows you to inseert contact details">
+  <meta name="keywords" content="name, date, email, human validation, comment box, textarea">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+<header class="structural">
+  <h1> Contact Page </h1>
+</header>
+<body>
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="media.html">Media v</a>
+            <ul>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <section class="content">
+    <main>
+      <h2> Contact</h2>
+      <form>
+        <section>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </section>
+        <section>
+          <label for="email">Email</label>
+          <input type="email" id="emai" name="email" required>
+        </section>
+        <section>
+          <fieldset>
+            <legend>What Stunt did you like the Most??</legend>
+            <label for="sec">The Stunt of SpeedFlying </label>
+            <input type="radio" id="4" name="sec" value="4" required><br>
+            <label for="sec">Holding outside the Plane</label>
+            <input type="radio" id="5" name="sec" value="5" checked><br>
+            <label for="sec">Helicopter Chase</label>
+            <input type="radio" id="8" name="sec" value="8">
+          </fieldset>
+        </section>
+        <section>
+          <label for="help">What do you need help with?</label><br>
+          <select id="help" name="help" required>
+            <option value="0" selected>Select Option</option>
+            <option value="html">Help with the movie</option>
+            <option value="css">Call Tom Cruise</option>
+            <option value="both">Report Your Phone</option>
+          </select>
+        </section>
+        <section>
+          <label for="comments">Comments</label><br>
+          <textarea id="comments" name="comments" rows="4" required></textarea>
+        </section>
+        <section>
+          <label for="human">I am Human</label>
+          <input type="checkbox" value="true" id="human" name="human" required>
+        </section>
+        <section>
+          <input type="submit" value="submit" id="submit">
+        </section>
+      </form>
+    </main>
+    <aside>
+      <h2 class="side"> Youtube Links</h2>
+      <ul>
+          <a  href="https://youtu.be/-lsFs2615gw?si=sGQbyapz1weTNLJG" target="_blank">Mission: Impossible - Dead Reckoning Part One. The Biggest Stunt in Cinema History (Tom Cruise)</a><br>
+          <a href="https://youtu.be/I720xCnnPUY?si=n6tSx5gHjxk2Zj5W" target="_blank">How Tom Cruise Pulled Off 8 Amazing Stunts | Movies Insider | Insider</a>
+
+      </ul>
+  </aside>
+  </section>
+  <footer class="structural">
+    <p>&copy; Manan Makwana 2023</p>
+  </footer>
+</body>
+
+</html>
